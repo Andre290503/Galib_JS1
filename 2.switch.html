@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan Switch</title>
+</head>
+<body>
+  <p>Masukan Grade Nilai (A,B,C,D,E)</p>
+    <label for="nilai">Masukan</label>
+    <input type="text" id="nilai">
+    <br>
+    <br>
+    <button onclick="chasil()">hasil</button>
+    <script>
+      var nilai=document.getElementById("nilai")
+      function chasil(){
+        switch(nilai.value){    
+          case 'A' :
+            document.writeln("<p>sempurna</p>")
+            break    
+          case 'B': 
+            document.writeln("<p>baik</p>")
+            break    
+          case 'C': 
+          document.writeln("<p>sedang</p>")    
+            break    
+          case 'D': 
+          document.writeln("<p>kurang</p>")    
+            break    
+          default :
+            document.writeln("<p>Pilihan yang tersedia hanya huruf A,B,C, dan D</p>")
+          break    
+        } 
+      }
+
+
+    </script>
+</body>
+</html>

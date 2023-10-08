@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      // nama = prompt("Ketik nama anda : ");
+      // nilai = prompt("Masukkan nilai anda : ");
+
+      function intro() {
+        let nama = "Andre";
+        let nilai = 100;
+
+        if (nilai > 80 && nilai <= 100) {
+          document.writeln(
+            `Halo saya ${nama}, saya mendapatkan <b>nilai yang sangat bagus</b> pada pelajaran Matematika. Nilai saya adalah ${nilai}`
+          );
+        } else if (nilai > 70 && nilai < 80) {
+          document.writeln(
+            `Halo nama saya ${nama}, saya mendapatkan <b>nilai bagus</b> pada pelajaran Matematika nilai saya adalah ${nilai}`
+          );
+        } else {
+          document.writeln(
+            `Halo nama saya ${nama}, saya mendapatkan <b>nilai yang jelek</b> pada pelajaran Matematika nilai saya adalah ${nilai}`
+          );
+        }
+      }
+      intro();
+    </script>
+  </body>
+</html>

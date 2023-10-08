@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percabangan if-else</title>
+  </head>
+  <body>
+    <p>Jika Input Kurang dari 10 maka Outputnya Jelek Tapi jika lebih dari sepuluh akan muncul Output Bagus</p>
+    <label for="nilaiUjian">Masukan</label>
+    <input type="text" id="nilaiUjian">
+    <br>
+    <br>
+    <button onclick="ifhasil()">hasil</button>
+    <script>
+      // Program untuk menentukan nilai huruf berdasarkan nilai ujian
+      var nilaiUjian =document.getElementById("nilaiUjian");
+      function ifhasil(){
+        if (nilaiUjian.value < 10) {
+        document.writeln("<p></p>Jelek</p>");
+        } 
+        else {
+        document.writeln("<p></p>Bagus</p>");
+        }
+      }
+    </script>
+    
+  </body>
+</html>
